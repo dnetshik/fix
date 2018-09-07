@@ -9,7 +9,7 @@
 
 MODULE_LICENSE("GPL");
 
-#define NAME "nsikhosa\n"
+#define NAME "dnetshik\n"
 #define LEN 9
 
 static char msg[1024];
@@ -70,7 +70,7 @@ static struct miscdevice my_dev = {
 static int hello_init(void)
 {
 	pr_info("Hello World\n");
-	strncpy(msg, "nsikhosa\n", 9);
+	strncpy(msg, "dnetshik\n", 9);
 	num_bytes = strlen(msg);
 	return misc_register(&my_dev);
 }
